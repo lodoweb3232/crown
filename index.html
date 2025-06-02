@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.O.D.O</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo Mountain Bikes" class="logo">
+            <h1>Bicis <span>L.O.D.O</span></h1>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="nav-item"><a href="#bicicletas" class="nav-link"><i class="fas fa-bicycle"></i> Bicicletas</a></li>
+                <li class="nav-item"><a href="#asesoramiento" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Asesoramiento</a></li>
+                <li class="nav-item"><a href="#tutoriales" class="nav-link"><i class="fas fa-video"></i> Tutoriales</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<div class="sidebar" id="mobileSidebar">
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="inicio.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="nav-item"><a href="bicicletas.html" class="nav-link"><i class="fas fa-bicycle"></i> Bicicletas</a></li>
+        <li class="nav-item"><a href="asesoramiento.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Asesoramiento</a></li>
+        <li class="nav-item"><a href="tutoriales.html" class="nav-link"><i class="fas fa-video"></i> Tutoriales</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+    </ul>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <main>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Descubre el mundo sobre <span>dos ruedas</span></h2>
+                <p>Explora los mejores senderos con nuestras bicicletas de montaña profesionales</p>
+                <div class="hero-buttons">
+                    <a href="#bicicletas" class="btn-primary">Ver modelos</a>
+                    <a href="#asesoramiento" class="btn-secondary">Asesoramiento</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+
+<!-- Sección Bicicletas -->
+<section id="bicicletas" class="section bikes-section">
+            <div class="section-header">
+                <h2>Nuestras <span>Bicicletas</span></h2>
+                <p>Selecciona la que mejor se adapte a tu estilo de riding</p>
+            </div>
+            <div class="bike-gallery">
+                <!-- Las bicicletas se cargarán con JavaScript -->
+            </div>
+        </section>
+
+
+<!-- Sección Asesoramiento -->
+<section id="asesoramiento" class="section advice-section">
+            <div class="section-header">
+                <h2>Asesoramiento <span>Profesional</span></h2>
+                <p>Te ayudamos a elegir la bicicleta perfecta para ti</p>
+            </div>
+            <div class="advice-container">
+                <div class="advice-card">
+                    <i class="fas fa-ruler-combined"></i>
+                    <h3>Talla Correcta</h3>
+                    <p>Aprende a seleccionar el cuadro adecuado según tu altura y estilo de manejo.</p>
+                </div>
+                <div class="advice-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Tipo de Terreno</h3>
+                    <p>Descubre qué bicicleta funciona mejor según los senderos que frecuentas.</p>
+                </div>
+                <div class="advice-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Conoce los cuidados básicos para mantener tu bicicleta en óptimas condiciones.</p>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Sección Tutoriales -->
+<section id="tutoriales" class="section tutorials-section">
+            <div class="section-header">
+                <h2>Tutoriales <span>L.O.D.O</span></h2>
+                <p>Aprende técnicas y mejora tus habilidades</p>
+            </div>
+            <div class="video-gallery"></div>
+</section>
+
+
+<!-- Sección Contacto -->
+<section id="contacto" class="section contact-section">
+            <div class="section-header">
+                <h2>Contacto <span>Rápido</span></h2>
+                <p>¿Tienes dudas? Escríbenos y te responderemos pronto</p>
+            </div>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. Merposur #43 </p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+52 960 115 4965 </p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Juventino3232@gmail.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <p>No disponible</p>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <p>no disponible</p>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <p>no disponible</p>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <p>no disponible</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagenes/logo.png" alt="Logo">
+                <h3>Bicis <span>L.O.D.O</span></h3>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#bicicletas">Bicicletas</a></li>
+                    <li><a href="#asesoramiento">Asesoramiento</a></li>
+                    <li><a href="#tutoriales">Tutoriales</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Suscríbete</h4>
+                <p>Recibe noticias y ofertas especiales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025Equipo peñente peñente3232. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
